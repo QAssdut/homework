@@ -1,0 +1,31 @@
+1、APP、ViewController生命周期的事件
+
+  APP生命周期： 打开 - 执行main函数 - 执行UIApplicationMain函数 - 初始化UIApplication对象并设置为代理 - 运行监听 - 结束退出
+  
+  ViewController生命周期:  alloc/init - loadView - viewDidLoad - viewWillAppear - viewDidAppear - viewWillDisappear - viewDidDisappear - dealloc
+
+2、五种常见的UI控件
+  UIViewController;
+  UIView;
+  UIScrollView;
+  UIButton;
+  UITableView;
+  UICollectionView;
+  UIWebView;
+  UILabel;
+  
+3、列举三个UITableViewDelegate的声明的方法
+
+  
+   // 返回行高
+    @available(iOS 2.0, *)
+    optional public func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
+   
+   // 指定cell的编辑风格
+    @available(iOS 2.0, *)
+    optional public func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle
+    
+    // 删除时弹出的确认按钮的文字
+    @available(iOS 3.0, *)
+    optional public func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -> String?
+

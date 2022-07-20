@@ -1,0 +1,34 @@
+// Student.h
+#import <Foundation/Foundation.h>
+
+@interface Student: NSObject
+{
+  NSString *name;
+  NSString *major;
+  int age;
+}
+-(void) study:(NSString *) time ;
+
+@end
+
+
+
+//++++++++++++++++++++++++++ Student.m ++++++++++++++++++++++++++++
+#import "Student.h"
+// interface
+@interface Student: NSObject
+
+@end
+// -----------------
+// implementation
+@implementation Student
+{
+  NSString *major = @"software";
+  NSString *name = @"zhangsan";
+  int age = 18;
+}
+-(void) study:(float) time{
+  NSLog(@"%@ 学习了 %f 小时 ",self.name,time);
+}
+
+@end
